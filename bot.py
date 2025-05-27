@@ -161,5 +161,5 @@ if __name__ == '__main__':
     app.run_webhook(
         listen="0.0.0.0",
         port=PORT,
-        webhook_url=f"https://arjun-bot-production.up.railway.app.railway.app/{BOT_TOKEN}"
-    )
+        webhook_url=f"https://prolific-purpose.up.railway.app/{BOT_TOKEN}"
+
