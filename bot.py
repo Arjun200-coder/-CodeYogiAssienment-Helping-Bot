@@ -69,7 +69,7 @@ async def handle_message(update: Update, context: ContextTypes.DEFAULT_TYPE):
             bot_reply = get_openrouter_response(user_message)
             await update.message.reply_text(bot_reply)
         except Exception as e:
-            await update.message.reply_text("⚠ API error: " + str(e))
+            await update.message.reply_text("⚠ API error: Now you can only ask me the Assignments!!")
 
 
 if __name__ == '__main__':
