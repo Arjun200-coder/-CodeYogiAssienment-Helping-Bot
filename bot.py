@@ -69,10 +69,10 @@ async def handle_message(update: Update, context: ContextTypes.DEFAULT_TYPE):
             bot_reply = get_openrouter_response(user_message)
             await update.message.reply_text(bot_reply)
         except Exception as e:
-            await update.message.reply_text("⚠ API error: Now you can only ask me the Assignments!!")
+            await update.message.reply_text("It's time to make the Assignments!!")
 
 
-if __name__ == '__main__':
+if _name_ == '_main_':
     app = ApplicationBuilder().token(BOT_TOKEN).build()
     app.add_handler(MessageHandler(filters.TEXT & (~filters.COMMAND), handle_message))
     print("🤖 Bot is running with OpenRouter API...")
